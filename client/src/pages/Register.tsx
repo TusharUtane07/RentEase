@@ -51,7 +51,7 @@ const Register = () => {
 				navigate("/login");
 			}
 		} catch (error) {
-			console.log("Something weird happened", error);
+			console.log("Error in registering user", error);
 		}
 	};
 
