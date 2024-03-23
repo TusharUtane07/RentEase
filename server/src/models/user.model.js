@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
+import jwt from "jsonwebtoken";
+import bcrypt from "bcrypt";
 
 const userSchema = mongoose.Schema(
 	{
@@ -20,7 +22,7 @@ const userSchema = mongoose.Schema(
 			type: String,
 			required: true,
 		},
-		profilePhotoPath: {
+		profile: {
 			type: String,
 			required: true,
 		},
